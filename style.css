@@ -1,0 +1,36 @@
+body{
+  background: #000;
+  color: white;
+  font-family: Tahoma;
+}
+h1{
+  text-align: center;
+}
+.cajaPrincipal{
+  width: 400px;
+  margin: auto;
+}
+#check{
+  display: none;
+}
+.cajaPrincipal label {
+  background: #33abcb;
+  padding: 5px;
+}
+.cajaPrincipal div img{
+  width: 400px;
+  margin-top: 10px;
+}
+
+.cajaPrincipal div{
+  height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.cajaPrincipal label:active{
+  background: red;
+}
+/*~ hermanos mismo nivel de jerarquia*/
+.cajaPrincipal #check:checked ~ div{
+  height: 400px;
+}
