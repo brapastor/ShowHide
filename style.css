@@ -33,4 +33,5 @@ h1{
 /*~ hermanos mismo nivel de jerarquia*/
 .cajaPrincipal #check:checked ~ div{
   height: 400px;
+  background: peru;
 }
